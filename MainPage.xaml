@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GISAndroid.MainPage">
+
+	<Grid RowDefinitions="Auto,*,Auto" BackgroundColor="Black" >
+
+		<!-- Header Section -->
+		<StackLayout Grid.Row="0" BackgroundColor="#38dc1e" Padding="0" HorizontalOptions="FillAndExpand">
+			<ImageButton Source="logo.png" WidthRequest="50" HeightRequest="50" BackgroundColor="#38dc1e" Clicked="OnLogoClicked"/>
+			<Label Text="GISAPP" FontSize="Large" FontAttributes="Bold" HorizontalOptions="Center" TextColor="Black"/>
+			<Label FontSize="Micro"/>
+			<StackLayout BackgroundColor="#333" Grid.Row="1" HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand">
+				<Label x:Name="DatetimeLabel" FontSize="Medium" HorizontalOptions="Center" TextColor="White"/>
+				<Label Text="tu sa zobrazia vaše aktuálne súradnice" FontSize="Medium" FontAttributes="Bold" HorizontalOptions="Center" TextColor="LightGray"/>
+			</StackLayout>
+		</StackLayout>
+
+		<!-- Main Content (Empty Section) -->
+		<ContentView Grid.Row="1" BackgroundColor="Black">
+			
+		</ContentView>
+
+		<!-- Bottom Navigation Bar -->
+		<Grid Grid.Row="2" BackgroundColor="#333" ColumnDefinitions="*,*,*,*" Padding="10">
+			<StackLayout Grid.Column="0" HorizontalOptions="Center">
+				<ImageButton x:Name="MapButton" Source="slovakiamap.png" WidthRequest="50" HeightRequest="50" BackgroundColor="#ffc500" Clicked="OnMapButtonClicked"/>
+				<Label Text="Mapa" FontSize="Small" TextColor="White" HorizontalOptions="Center"/>
+			</StackLayout>
+			<StackLayout Grid.Column="1" HorizontalOptions="Center">
+				<ImageButton Source="pointlocate.png" WidthRequest="50" HeightRequest="50" BackgroundColor="#ffc500" Clicked="OnLocationButtonClicked"/>
+				<Label Text="GPS bod" FontSize="Small" TextColor="White" HorizontalOptions="Center"/>
+			</StackLayout>
+			<StackLayout Grid.Column="2" HorizontalOptions="Center">
+				<ImageButton Source="waytrack.png" WidthRequest="50" HeightRequest="50" BackgroundColor="#ffc500" Clicked="OnWayButtonClicked"/>
+				<Label Text="GPS trasa" FontSize="Small" TextColor="White" HorizontalOptions="Center"/>
+			</StackLayout>
+			<StackLayout Grid.Column="3" HorizontalOptions="Center">
+				<ImageButton Source="settings.png" WidthRequest="50" HeightRequest="50" BackgroundColor="#ffc500" Clicked="OnSettingsButtonClicked"/>
+				<Label Text="Nastavenia" FontSize="Small" TextColor="White" HorizontalOptions="Center"/>
+			</StackLayout>
+		</Grid>
+	</Grid>
+
+</ContentPage>

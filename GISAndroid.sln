@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GISAndroid", "GISAndroid.csproj", "{B1423F76-B6FF-4CB2-AFF2-49E823DB4825}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B1423F76-B6FF-4CB2-AFF2-49E823DB4825}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1423F76-B6FF-4CB2-AFF2-49E823DB4825}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1423F76-B6FF-4CB2-AFF2-49E823DB4825}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B1423F76-B6FF-4CB2-AFF2-49E823DB4825}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1423F76-B6FF-4CB2-AFF2-49E823DB4825}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {612B1C7F-2B34-40D1-9552-DEB0222BE7BA}
+	EndGlobalSection
+EndGlobal
